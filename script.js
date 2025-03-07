@@ -105,7 +105,6 @@ document.addEventListener('DOMContentLoaded', () => {
         responsive: true,
         controls: true,
         preload: 'auto',
-        poster: 'https://i.ibb.co/1RW9vqg/poster.jpg',
         playbackRates: [0.5, 1, 1.5, 2],
         controlBar: {
             children: [
@@ -172,7 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Define the specific channels only
     const specificChannels = [
-         {
+        {
             id: 1,
             name: "Sony Novelas",
             logo: "https://www.cxtv.com.br/img/Tvs/Logo/webp-m/a3bd552eca6645942a60a053fe61fafb.webp",
@@ -517,7 +516,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const categoryList = document.querySelector('.category-list');
         const uniqueCountries = [...new Set(specificChannels.map(ch => ch.country))];
         
-        categoryList.innerHTML = '<button class="category-btn active">Todos</button>';
+        categoryList.innerHTML = '<button class="category-btn active">Todos los Países</button>';
         
         uniqueCountries.forEach(country => {
             const countryChannels = specificChannels.filter(ch => ch.country === country);
@@ -645,149 +644,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (deltaY < 30 && deltaX < 30) {
                 e.preventDefault();
             }
-    ];
-
-    const channels = specificChannels;
-
-    // Update the category list creation
-    function createCountryCategories() {
-        const categoryList = document.querySelector('.category-list');
-        const uniqueCountries = [...new Set(specificChannels.map(ch => ch.country))];
-        
-        categoryList.innerHTML = '<button class="category-btn active">Todos los Países</button>';
-        
-        uniqueCountries.forEach(country => {
-            const countryChannels = specificChannels.filter(ch => ch.country === country);
-            const button = document.createElement('button');
-            button.className = 'category-btn';
-            button.textContent = `${country} (${countryChannels.length})`;
-            button.dataset.country = country;
-            categoryList.appendChild(button);
-        });
-    }
-
-    // Update channel display function
-    function displayChannels(filterCountry = null) {
-        const channelGrid = document.querySelector('.live-channels .channel-grid');
-        channelGrid.innerHTML = '';
-        
-        const filteredChannels = filterCountry ? 
-            channels.filter(ch => ch.country === filterCountry) : 
-            channels;
-
-        filteredChannels.forEach(channel => {
-            const channelCard = document.createElement('div');
-            channelCard.className = 'channel-card';
-            channelCard.innerHTML = `
-                <div class="channel-preview" style="background-image: url('${channel.logo}')">
-                    ${channel.isLive ? '<div class="live-badge">EN VIVO</div>' : ''}
-                    <div class="channel-info">
-                        <h3>${channel.name}</h3>
-                        <p>Transmitiendo desde: ${channel.country}</p>
-                        <p>${channel.viewers} viendo</p>
-                        <p class="channel-country">${channel.country} | ${channel.language}</p>
-                    </div>
-                </div>
-            `;
-            
-            channelCard.addEventListener('click', () => playChannel(channel));
-            channelGrid.appendChild(channelCard);
-        });
-    }
-
-    // Update category filter functionality
-    function initializeCategoryFilters() {
-        createCountryCategories();
-        
-        const categoryButtons = document.querySelectorAll('.category-btn');
-        categoryButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                categoryButtons.forEach(btn => btn.classList.remove('active'));
-                button.classList.add('active');
-                
-                const country = button.dataset.country;
-                displayChannels(country === undefined ? null : country);
-            });
-        });
-    }
-
-    // Function to update current channel info
-    function updateCurrentChannel(channel) {
-        document.getElementById('current-channel-name').textContent = channel.name;
-        document.getElementById('current-show').textContent = `Transmitiendo desde: ${channel.country}`;
-    }
-
-    // Function to play channel
-    function playChannel(channel) {
-        player.poster(''); 
-        player.src({
-            src: channel.streamUrl,
-            type: 'application/x-mpegURL'
-        });
-        player.play();
-        updateCurrentChannel(channel);
-
-        player.on('ended', () => {
-            player.poster('https://i.ibb.co/1RW9vqg/poster.jpg');
-        });
-        
-        player.on('error', () => {
-            player.poster('https://i.ibb.co/1RW9vqg/poster.jpg');
-        });
-    }
-
-    // Initialize functionality
-    initializeCategoryFilters();
-    displayChannels();
-
-    // Update touch handling for better mobile experience
-    function initializeTouchHandling() {
-        const player = videojs('stellar-player');
-        
-        let lastTapTime = 0;
-        let touchTimeout;
-        let touchStartX = 0;
-        let touchStartY = 0;
-        const doubleTapThreshold = 300;
-        
-        player.on('touchstart', (e) => {
-            const touch = e.touches[0];
-            touchStartX = touch.clientX;
-            touchStartY = touch.clientY;
-            
-            const currentTime = new Date().getTime();
-            const tapLength = currentTime - lastTapTime;
-            
-            if (tapLength < doubleTapThreshold && tapLength > 0) {
-                clearTimeout(touchTimeout);
-                
-                const playerRect = player.el().getBoundingClientRect();
-                const tapX = touchStartX - playerRect.left;
-                const tapPosition = tapX / playerRect.width;
-                
-                if (tapPosition < 0.4) {
-                    player.currentTime(Math.max(0, player.currentTime() - 10));
-                } else if (tapPosition > 0.6) {
-                    player.currentTime(Math.min(player.duration(), player.currentTime() + 10));
-                }
-                
-                e.preventDefault();
-            } else {
-                touchTimeout = setTimeout(() => {
-                }, doubleTapThreshold);
-            }
-            
-            lastTapTime = currentTime;
-        });
-        
-        player.on('touchmove', (e) => {
-            const touch = e.touches[0];
-            const deltaY = Math.abs(touch.clientY - touchStartY);
-            const deltaX = Math.abs(touch.clientX - touchStartX);
-            
-            if (deltaY < 30 && deltaX < 30) {
-                e.preventDefault();
-            }
         });
     }
 
@@ -821,6 +677,7 @@ document.addEventListener('DOMContentLoaded', () => {
         categoryList.addEventListener('touchend', () => {
             isScrolling = false;
             
+            // Add momentum scrolling
             const momentumScroll = () => {
                 velocity *= 0.95;
                 categoryList.scrollLeft -= velocity;
@@ -837,6 +694,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeTouchHandling();
     initializeCategoryScroll();
 
+    // Add viewport height fix for mobile browsers
     function setVH() {
         let vh = window.innerHeight * 0.01;
         document.documentElement.style.setProperty('--vh', `${vh}px`);
@@ -845,6 +703,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setVH();
     window.addEventListener('resize', setVH);
 
+    // Notifications and Profile click handlers
     document.querySelector('.notifications').addEventListener('click', () => {
         alert('¡Notificaciones próximamente!');
     });
