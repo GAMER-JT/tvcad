@@ -413,7 +413,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
          {
             id: 21,
-            name: "Venevision",
+            name: "Televen",
             logo: "https://i.ytimg.com/vi/1o4f2pI-vps/maxresdefault.jpg",
             country: "Variedades",
             genre: "Variedades",
@@ -426,7 +426,7 @@ document.addEventListener('DOMContentLoaded', () => {
          {
             id: 22,
             name: "La Tele Tuya",
-            logo: "https://static.wikia.nocookie.net/logopedia/images/9/9c/TLT-prelaunching.jpg/revision/latest?cb=20220120182821&path-prefix=es",
+            logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThlA0JKpVRDZQegfBflYUxCqtqFsph0MVAGQ&s",
             country: "Variedades",
             genre: "Variedades",
             currentShow: "Venezuela",
