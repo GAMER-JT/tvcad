@@ -425,14 +425,14 @@ document.addEventListener('DOMContentLoaded', () => {
         },
          {
             id: 22,
-            name: "La Tele Tuya",
-            logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThlA0JKpVRDZQegfBflYUxCqtqFsph0MVAGQ&s",
+            name: "Canal 21",
+            logo: "https://megavision.univtec.com/_next/image?url=https%3A%2F%2Fkki5auiqw9.execute-api.us-east-1.amazonaws.com%2Fstg%2Fresize%3Furl%3Dhttps%3A%2F%2Ffrankly-vod.akamaized.net%2Fmegavision%2Fuploaded%2F754bd760-78d6-48db-90ad-88b97e502ed8.jpeg&w=3840&q=90",
             country: "Variedades",
             genre: "Variedades",
-            currentShow: "Venezuela",
+            currentShow: "Salvador",
            
             language: "Español",
-            streamUrl: "https://dmxleo.dailymotion.com/cdn/manifest/video/x930kre.m3u8?auth=1741546803-2688-jdcv8r8n-d4c9487eae5995039977326751d06917oWQGDLUNZ0waf_1FOLwYPAKXetftKjHHmbO3uDSMoYOOwPjSIVg_vXnRRzzHE4STlmLSmGyqiJJhvihcLzT_raV-vqz6bQMl1L3MvSM_xXuD_kGI4pranVB-EuVrib_4Xx2FrQjFdUD1STHDKntXO7SGTPliKV4fIoi7ED13N61n5r3As3yaCABXtgNTcoIXwEd-3JyiEqpeqvKHwwVH7i9sPP1SQCd8750-vDbNxLNwxgPboXc2yTverPNWWq3A9E6OnaN2yPC5Cpw4fx0SRSZIRODsq7o1kgymWR8gdD04TIZZeg7qvzt7mOcZelxSR8zV4tNxuoV79CeHw9ZDDNWrLiBaCE2CixT8AlPwsEWKblKKOqMKazBD8SV-SctSsNg93fuAkVfV8DTPmKxOIpFrCEl04-RY4wnb8rSPKqjOzOs6g-P3obLWZdzgpQA6nnx8vq1bzWkcZNlrxm7DsjFiJyEP4yboWxre_aFM65yUo1PEuM7TJaQmL9SNZh5Swji_P7XQIOMg6Q0DAwvFUibwhXrVWicG4GgcN0g8DCU-hjx7IT1gVhYcCdbxseGjevCKphPY-skxmUWhhYuDVqNvABzQn2zioC72gnCL8sBh_wkOynYG949C2Wlg6lBSVA2g7F3Y2UVI85MIGX05Hw_4i8anD9UPkdSCvSnQEG9r2VGE-qtHSrDjmKQF-b3VGT7TJWaUeJqzFBf62QRrHxup3XAeedYNEdrEg1vr9eWo5qabVWQiQpp_8SzvLpjp_i5w_4pu80ci6foVjNBFoLFMjHi1GnIdy7RIuS_kdGRXFI23-SviZMqr6v8FaOd1aB4enMv4Ax71_fV0qspP_1k4nKZvfZj3nqKNfOyyeJQY6atbClLNs8QN74IKNOgo6ygqXe3d7mZvvUPOWGbfIG7aOsb4vB10RPK5_yr_SlO5YQ7U_Qch-RQl54Hbj1ZpjGq6n3fazarJyPTdQS503p311j0F56Mb1oc7WZCuYDBZM7ncBC_clkX0qTIAcY71mWMF3gdsrLS7yfZp1CFZz4zyYTL2QydvFUI-xiKKG9vUe-Xki_DNN9y1MrxuAQ6L6XSwTQ-irLq99OWrJu2T7qQ&af=%5BAPIFRAMEWORKS%5D&vv=%5BVASTVERSIONS%5D&mm=%5BMEDIAMIME%5D&pbm=%5BPLAYBACKMETHODS%5D&bs=1&cookie_sync_ab_gk=1&reader_gdpr_flag=0&reader_gdpr_consent=&gdpr_binary_consent=opt-out&gdpr_comes_from_infopack=0&reader_us_privacy=1---&eb=https%3A%2F%2Fgithub.com%2F",
+            streamUrl: "https://mgv-channel21.akamaized.net/hls/live/2093191/MGV_CHANNEL21/master.m3u8",
             isLive: true
         },
          {
@@ -724,7 +724,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 button.classList.add('active');
                 
                 const country = button.dataset.country;
-                displayChannels(country === undefined ? null : country);
+                displayChannels(country ===  ? null : country);
             });
         });
     }
