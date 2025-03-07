@@ -724,7 +724,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 button.classList.add('active');
                 
                 const country = button.dataset.country;
-                displayChannels(country ===  ? null : country);
+                displayChannels(country === undefined  ? null : country);
             });
         });
     }
