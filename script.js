@@ -414,25 +414,25 @@ document.addEventListener('DOMContentLoaded', () => {
          {
             id: 21,
             name: "Venevision",
-            logo: "https://cisneros-vod.akamaized.net/venevision/uploaded/a833ecf3-a21c-49e3-a2eb-8e67dfc916e5.jpeg",
+            logo: "https://i.ytimg.com/vi/1o4f2pI-vps/maxresdefault.jpg",
             country: "Variedades",
             genre: "Variedades",
             currentShow: "Venezuela",
            
             language: "Español",
-            streamUrl: "https://venevision.akamaized.net/hls/live/2098814/VENEVISION/master.m3u8",
+            streamUrl: "https://d39cdj6x0ssnqk.cloudfront.net/out/v1/ae3f5ad3ac9d4bcfbedc1894a62782b4/index.m3u8",
             isLive: true
         },
          {
             id: 22,
-            name: "Canal i",
-            logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbRx9uc2LL4fw5nZQl2at-j00zFqIycyBkWoZlrfrD_6JjhscnUkBqo2b7_SXgwRY7Btg&usqp=CAU",
+            name: "La Tele Tuya",
+            logo: "https://static.wikia.nocookie.net/logopedia/images/9/9c/TLT-prelaunching.jpg/revision/latest?cb=20220120182821&path-prefix=es",
             country: "Variedades",
             genre: "Variedades",
             currentShow: "Venezuela",
            
             language: "Español",
-            streamUrl: "https://canali-live.akamaized.net/hls/live/2112725/CANALI_LIVE/master.m3u8",
+            streamUrl: "https://dmxleo.dailymotion.com/cdn/manifest/video/x930kre.m3u8?auth=1741546803-2688-jdcv8r8n-d4c9487eae5995039977326751d06917oWQGDLUNZ0waf_1FOLwYPAKXetftKjHHmbO3uDSMoYOOwPjSIVg_vXnRRzzHE4STlmLSmGyqiJJhvihcLzT_raV-vqz6bQMl1L3MvSM_xXuD_kGI4pranVB-EuVrib_4Xx2FrQjFdUD1STHDKntXO7SGTPliKV4fIoi7ED13N61n5r3As3yaCABXtgNTcoIXwEd-3JyiEqpeqvKHwwVH7i9sPP1SQCd8750-vDbNxLNwxgPboXc2yTverPNWWq3A9E6OnaN2yPC5Cpw4fx0SRSZIRODsq7o1kgymWR8gdD04TIZZeg7qvzt7mOcZelxSR8zV4tNxuoV79CeHw9ZDDNWrLiBaCE2CixT8AlPwsEWKblKKOqMKazBD8SV-SctSsNg93fuAkVfV8DTPmKxOIpFrCEl04-RY4wnb8rSPKqjOzOs6g-P3obLWZdzgpQA6nnx8vq1bzWkcZNlrxm7DsjFiJyEP4yboWxre_aFM65yUo1PEuM7TJaQmL9SNZh5Swji_P7XQIOMg6Q0DAwvFUibwhXrVWicG4GgcN0g8DCU-hjx7IT1gVhYcCdbxseGjevCKphPY-skxmUWhhYuDVqNvABzQn2zioC72gnCL8sBh_wkOynYG949C2Wlg6lBSVA2g7F3Y2UVI85MIGX05Hw_4i8anD9UPkdSCvSnQEG9r2VGE-qtHSrDjmKQF-b3VGT7TJWaUeJqzFBf62QRrHxup3XAeedYNEdrEg1vr9eWo5qabVWQiQpp_8SzvLpjp_i5w_4pu80ci6foVjNBFoLFMjHi1GnIdy7RIuS_kdGRXFI23-SviZMqr6v8FaOd1aB4enMv4Ax71_fV0qspP_1k4nKZvfZj3nqKNfOyyeJQY6atbClLNs8QN74IKNOgo6ygqXe3d7mZvvUPOWGbfIG7aOsb4vB10RPK5_yr_SlO5YQ7U_Qch-RQl54Hbj1ZpjGq6n3fazarJyPTdQS503p311j0F56Mb1oc7WZCuYDBZM7ncBC_clkX0qTIAcY71mWMF3gdsrLS7yfZp1CFZz4zyYTL2QydvFUI-xiKKG9vUe-Xki_DNN9y1MrxuAQ6L6XSwTQ-irLq99OWrJu2T7qQ&af=%5BAPIFRAMEWORKS%5D&vv=%5BVASTVERSIONS%5D&mm=%5BMEDIAMIME%5D&pbm=%5BPLAYBACKMETHODS%5D&bs=1&cookie_sync_ab_gk=1&reader_gdpr_flag=0&reader_gdpr_consent=&gdpr_binary_consent=opt-out&gdpr_comes_from_infopack=0&reader_us_privacy=1---&eb=https%3A%2F%2Fgithub.com%2F",
             isLive: true
         },
          {
@@ -462,7 +462,7 @@ document.addEventListener('DOMContentLoaded', () => {
          {
             id: 25,
             name: "Ecuavisa",
-            logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOYxCE_PHTv9LIQqbcQesSX20qKJwsnv7fHg&s",
+            logo: "https://redirector.rudo.video/hls-video/c54ac2799874375c81c1672abb700870537c5223/ecuavisa/ecuavisa.smil/playlist_dvr.m3u8?did=b2153323358367ca6f02b283e",
             country: "Variedades",
             genre: "Variedades",
             currentShow: "Ecuador",
@@ -497,6 +497,162 @@ document.addEventListener('DOMContentLoaded', () => {
         },
          {
             id: 28,
+            name: "Cali TV",
+            logo: "https://image.roku.com/developer_channels/prod/5c8001a2b29bd6e02113870b26f1abaf38d428f3bf2ef15d93539b5b7730c1dd.png",
+            country: "Variedades",
+            genre: "Variedades",
+            currentShow: "Colombia",
+           
+            language: "Español",
+            streamUrl: "https://5ab772334c39c.streamlock.net/live-calitv/_definst_/calitv1/playlist.m3u8",
+            isLive: true
+        },
+        {
+            id: 29,
+            name: "Cali TV",
+            logo: "https://image.roku.com/developer_channels/prod/5c8001a2b29bd6e02113870b26f1abaf38d428f3bf2ef15d93539b5b7730c1dd.png",
+            country: "Variedades",
+            genre: "Variedades",
+            currentShow: "Colombia",
+           
+            language: "Español",
+            streamUrl: "https://5ab772334c39c.streamlock.net/live-calitv/_definst_/calitv1/playlist.m3u8",
+            isLive: true
+        },
+        {
+            id: 30,
+            name: "Cali TV",
+            logo: "https://image.roku.com/developer_channels/prod/5c8001a2b29bd6e02113870b26f1abaf38d428f3bf2ef15d93539b5b7730c1dd.png",
+            country: "Variedades",
+            genre: "Variedades",
+            currentShow: "Colombia",
+           
+            language: "Español",
+            streamUrl: "https://5ab772334c39c.streamlock.net/live-calitv/_definst_/calitv1/playlist.m3u8",
+            isLive: true
+        },
+        {
+            id: 31,
+            name: "Cali TV",
+            logo: "https://image.roku.com/developer_channels/prod/5c8001a2b29bd6e02113870b26f1abaf38d428f3bf2ef15d93539b5b7730c1dd.png",
+            country: "Variedades",
+            genre: "Variedades",
+            currentShow: "Colombia",
+           
+            language: "Español",
+            streamUrl: "https://5ab772334c39c.streamlock.net/live-calitv/_definst_/calitv1/playlist.m3u8",
+            isLive: true
+        },
+        {
+            id: 32,
+            name: "Cali TV",
+            logo: "https://image.roku.com/developer_channels/prod/5c8001a2b29bd6e02113870b26f1abaf38d428f3bf2ef15d93539b5b7730c1dd.png",
+            country: "Variedades",
+            genre: "Variedades",
+            currentShow: "Colombia",
+           
+            language: "Español",
+            streamUrl: "https://5ab772334c39c.streamlock.net/live-calitv/_definst_/calitv1/playlist.m3u8",
+            isLive: true
+        },
+        {
+            id: 33,
+            name: "Cali TV",
+            logo: "https://image.roku.com/developer_channels/prod/5c8001a2b29bd6e02113870b26f1abaf38d428f3bf2ef15d93539b5b7730c1dd.png",
+            country: "Variedades",
+            genre: "Variedades",
+            currentShow: "Colombia",
+           
+            language: "Español",
+            streamUrl: "https://5ab772334c39c.streamlock.net/live-calitv/_definst_/calitv1/playlist.m3u8",
+            isLive: true
+        },
+        {
+            id: 34,
+            name: "Cali TV",
+            logo: "https://image.roku.com/developer_channels/prod/5c8001a2b29bd6e02113870b26f1abaf38d428f3bf2ef15d93539b5b7730c1dd.png",
+            country: "Variedades",
+            genre: "Variedades",
+            currentShow: "Colombia",
+           
+            language: "Español",
+            streamUrl: "https://5ab772334c39c.streamlock.net/live-calitv/_definst_/calitv1/playlist.m3u8",
+            isLive: true
+        },
+        {
+            id: 35,
+            name: "Cali TV",
+            logo: "https://image.roku.com/developer_channels/prod/5c8001a2b29bd6e02113870b26f1abaf38d428f3bf2ef15d93539b5b7730c1dd.png",
+            country: "Variedades",
+            genre: "Variedades",
+            currentShow: "Colombia",
+           
+            language: "Español",
+            streamUrl: "https://5ab772334c39c.streamlock.net/live-calitv/_definst_/calitv1/playlist.m3u8",
+            isLive: true
+        },
+        {
+            id: 36,
+            name: "Cali TV",
+            logo: "https://image.roku.com/developer_channels/prod/5c8001a2b29bd6e02113870b26f1abaf38d428f3bf2ef15d93539b5b7730c1dd.png",
+            country: "Variedades",
+            genre: "Variedades",
+            currentShow: "Colombia",
+           
+            language: "Español",
+            streamUrl: "https://5ab772334c39c.streamlock.net/live-calitv/_definst_/calitv1/playlist.m3u8",
+            isLive: true
+        },
+        {
+            id: 37,
+            name: "Cali TV",
+            logo: "https://image.roku.com/developer_channels/prod/5c8001a2b29bd6e02113870b26f1abaf38d428f3bf2ef15d93539b5b7730c1dd.png",
+            country: "Variedades",
+            genre: "Variedades",
+            currentShow: "Colombia",
+           
+            language: "Español",
+            streamUrl: "https://5ab772334c39c.streamlock.net/live-calitv/_definst_/calitv1/playlist.m3u8",
+            isLive: true
+        },
+        {
+            id: 38,
+            name: "Cali TV",
+            logo: "https://image.roku.com/developer_channels/prod/5c8001a2b29bd6e02113870b26f1abaf38d428f3bf2ef15d93539b5b7730c1dd.png",
+            country: "Variedades",
+            genre: "Variedades",
+            currentShow: "Colombia",
+           
+            language: "Español",
+            streamUrl: "https://5ab772334c39c.streamlock.net/live-calitv/_definst_/calitv1/playlist.m3u8",
+            isLive: true
+        },
+        {
+            id: 38,
+            name: "Cali TV",
+            logo: "https://image.roku.com/developer_channels/prod/5c8001a2b29bd6e02113870b26f1abaf38d428f3bf2ef15d93539b5b7730c1dd.png",
+            country: "Variedades",
+            genre: "Variedades",
+            currentShow: "Colombia",
+           
+            language: "Español",
+            streamUrl: "https://5ab772334c39c.streamlock.net/live-calitv/_definst_/calitv1/playlist.m3u8",
+            isLive: true
+        },
+        {
+            id: 39,
+            name: "Cali TV",
+            logo: "https://image.roku.com/developer_channels/prod/5c8001a2b29bd6e02113870b26f1abaf38d428f3bf2ef15d93539b5b7730c1dd.png",
+            country: "Variedades",
+            genre: "Variedades",
+            currentShow: "Colombia",
+           
+            language: "Español",
+            streamUrl: "https://5ab772334c39c.streamlock.net/live-calitv/_definst_/calitv1/playlist.m3u8",
+            isLive: true
+        },
+        {
+            id: 40,
             name: "Cali TV",
             logo: "https://image.roku.com/developer_channels/prod/5c8001a2b29bd6e02113870b26f1abaf38d428f3bf2ef15d93539b5b7730c1dd.png",
             country: "Variedades",
